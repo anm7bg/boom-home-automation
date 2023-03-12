@@ -1,5 +1,6 @@
 import styles from "./LoginPage.module.scss";
 import { Container, Paper } from "@mui/material";
+import Login from "../../src/components/login/Login";
 
 export default function LoginPage({  }) {
 
@@ -7,11 +8,7 @@ export default function LoginPage({  }) {
         <div className={styles.wrapper}>
             <Container>
                 <Paper elevation={3} >
-                    <form action="#">
-                        <input type="text" />
-                        <input type="password" />
-                        <input type="submit" />
-                    </form>
+                    <Login />
                 </Paper>
             </Container>
         </div>
