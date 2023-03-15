@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import styles from "./Time.module.scss";
 
@@ -14,10 +15,10 @@ export default function Time() {
     },[])
 
     return(
-        
+
         <div className={styles["time-wrapper"]}>
-            <p>Time</p>
-            <p>{time}</p>
+            <Typography>Time</Typography>
+            <Typography>{time}</Typography>
         </div>
     );
 }
