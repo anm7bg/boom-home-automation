@@ -3,6 +3,7 @@ import styles from "./Weather.module.scss";
 
 export default function Weather({ degrees=20, type="cloudy"}) {
 
+    
     return(
         <div className={styles["weather-wrapper"]}>
             <Typography component="h3">Weather</Typography>
