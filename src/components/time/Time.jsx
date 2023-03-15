@@ -14,6 +14,7 @@ export default function Time() {
     },[])
 
     return(
+        
         <div className={styles["time-wrapper"]}>
             <p>Time</p>
             <p>{time}</p>
