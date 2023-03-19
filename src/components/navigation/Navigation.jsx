@@ -107,8 +107,9 @@ export default function Navigation({}) {
                         <HomeOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Apartament" />
-                      <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
                   </IconButton>
+                  <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
+
               </ListItem>
               <ListItem key="Living Room" disablePadding>
                   <IconButton>
@@ -124,8 +125,9 @@ export default function Navigation({}) {
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Bedroom" />
-                      <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
                   </IconButton>
+                  <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
+
               </ListItem>
               <ListItem key="Bathroom" disablePadding>
                   <IconButton>
@@ -161,8 +163,9 @@ export default function Navigation({}) {
                         <HomeOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="House" />
-                      <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
                   </IconButton>
+                  <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
+
               </ListItem>
               <ListItem key="Living Room" disablePadding>
                   <IconButton>
