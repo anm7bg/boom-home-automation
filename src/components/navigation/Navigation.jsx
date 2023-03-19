@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Badge, Box, Button, Drawer, Grid, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, Button, Drawer, Grid, IconButton, List, ListItem, iconButton, ListItemIcon, ListItemText, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import BedOutlinedIcon from "@mui/icons-material/BedOutlined"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
@@ -36,12 +36,12 @@ export default function Navigation({}) {
   //     <List>
   //       {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
   //         <ListItem key={text} disablePadding>
-  //           <ListItemButton>
+  //           <iconButton>
   //             <ListItemIcon>
   //               {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
   //             </ListItemIcon>
   //             <ListItemText primary={text} />
-  //           </ListItemButton>
+  //           </iconButton>
   //         </ListItem>
   //       ))}
   //     </List>
@@ -49,12 +49,12 @@ export default function Navigation({}) {
   //     <List>
   //       {['All mail', 'Trash', 'Spam'].map((text, index) => (
   //         <ListItem key={text} disablePadding>
-  //           <ListItemButton>
+  //           <iconButton>
   //             <ListItemIcon>
   //               {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
   //             </ListItemIcon>
   //             <ListItemText primary={text} />
-  //           </ListItemButton>
+  //           </iconButton>
   //         </ListItem>
   //       ))}
   //     </List>
@@ -100,107 +100,107 @@ export default function Navigation({}) {
           <MenuItem>
             <List>
               <ListItem key="Apartament" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <HomeOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Apartament" />
                       <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Living Room" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Living Room" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Bedroom" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Bedroom" />
                       <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Bathroom" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Bathroom" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Toilet" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Toilet" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Patio" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Patio" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
             </List>
           </MenuItem>
           <MenuItem>
             <List>
               <ListItem key="House" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <HomeOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="House" />
                       <Badge className={styles.badge} badgeContent={5} color="secondary" overlap="rectangular"/>
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Living Room" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Living Room" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Bedroom" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Bedroom" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Bathroom" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Bathroom" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Toilet" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Toilet" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
               <ListItem key="Patio" disablePadding>
-                  <ListItemButton>
+                  <iconButton>
                       <ListItemIcon>
                         <BedOutlinedIcon />
                       </ListItemIcon>
                       <ListItemText primary="Patio" />
-                  </ListItemButton>
+                  </iconButton>
               </ListItem>
             </List>
           </MenuItem>

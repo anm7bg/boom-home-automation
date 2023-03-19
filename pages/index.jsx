@@ -10,10 +10,7 @@ export default function Index() {
   // return <User />;
   // return <Weather />
   // return <Time />
-<<<<<<< HEAD
   return <Navigation />
-}
-=======
   return (
     <div>
       <Header
@@ -29,4 +26,3 @@ export default function Index() {
     </div>
   );
 }
->>>>>>> cc646b752ab62cc554562fd400ee7b3b59ab13a7
