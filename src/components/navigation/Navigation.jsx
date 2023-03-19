@@ -79,7 +79,7 @@ export default function Navigation({}) {
   // );
 
   return(
-    <Menu open={true} className={styles.menu}>
+    <Menu open={true} className={styles.navigation}>
     <div className={styles.navigation}>
       {/* <Button onClick={toggleDrawer(anchor, true)}>Menu</Button> */}
      
