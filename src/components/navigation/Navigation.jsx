@@ -79,6 +79,7 @@ export default function Navigation({}) {
   // );
 
   return(
+    <Menu open={true}>
     <div className={styles.navigation}>
       {/* <Button onClick={toggleDrawer(anchor, true)}>Menu</Button> */}
      
@@ -87,7 +88,7 @@ export default function Navigation({}) {
           open={true}
           // onClose={toggleDrawer(anchor, false)}
         >
-      <Menu open={true}>
+      
           <MenuItem>
             <Grid container spacing={2}>
               <Grid item xs={9}>
@@ -205,9 +206,10 @@ export default function Navigation({}) {
               </ListItem>
             </List>
           </MenuItem>
-          </Menu>
         </Drawer>
       
     </div>
-  );
+          </Menu>
+
+);
 }
