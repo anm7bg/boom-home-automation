@@ -79,140 +79,132 @@ export default function Navigation({}) {
   // );
 
   return(
-    <Menu open={true} className={styles.menu}>
     <div className={styles.navigation}>
       {/* <Button onClick={toggleDrawer(anchor, true)}>Menu</Button> */}
-     
-        <Drawer
-          // anchor="Menu"
-          open={true}
-          // onClose={toggleDrawer(anchor, false)}
-        >
-      
-          <MenuItem>
-            <Grid container spacing={2}>
-              <Grid item xs={9}>
-                <User size="40px" headingSize="h3" />     
-              </Grid>
-              <Grid item xs={1}>
-                <a className={styles.logout} href="#" title="Log out"><MoreVertIcon /></a>
-              </Grid>
+      <Drawer
+        // anchor="Menu"
+        open={true}
+        // onClose={toggleDrawer(anchor, false)}
+      >
+          <Grid container spacing={2}>
+            <Grid item xs={9}>
+              <User size="40px" headingSize="h3" />     
             </Grid>
-          </MenuItem>
-          <MenuItem>
-            <List>
-              <ListItem key="Apartament" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <HomeOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Apartament" />
-                  </IconButton>
-                  <Badge badgeContent={5} color="secondary"/>
+            <Grid item xs={1}>
+              <Menu open={true}>
+                <MenuItem>
+                  <a className={styles.logout} href="#" title="Log out"><MoreVertIcon /></a>
+                </MenuItem>
+              </Menu>
+            </Grid>
+          </Grid>
+          <List>
+            <ListItem key="Apartament" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <HomeOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Apartament" />
+                </IconButton>
+                <Badge badgeContent={5} color="secondary"/>
 
-              </ListItem>
-              <ListItem key="Living Room" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Living Room" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Bedroom" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Bedroom" />
-                  </IconButton>
-                  <Badge badgeContent={5} color="secondary" />
+            </ListItem>
+            <ListItem key="Living Room" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Living Room" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Bedroom" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Bedroom" />
+                </IconButton>
+                <Badge badgeContent={5} color="secondary" />
 
-              </ListItem>
-              <ListItem key="Bathroom" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Bathroom" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Toilet" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Toilet" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Patio" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Patio" />
-                  </IconButton>
-              </ListItem>
-            </List>
-          </MenuItem>
-          <MenuItem>
-            <List>
-              <ListItem key="House" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <HomeOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="House" />
-                  </IconButton>
-                  <Badge badgeContent={5} color="secondary"/>
+            </ListItem>
+            <ListItem key="Bathroom" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Bathroom" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Toilet" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Toilet" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Patio" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Patio" />
+                </IconButton>
+            </ListItem>
+          </List>
+          <List>
+            <ListItem key="House" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <HomeOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="House" />
+                </IconButton>
+                <Badge badgeContent={5} color="secondary"/>
 
-              </ListItem>
-              <ListItem key="Living Room" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Living Room" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Bedroom" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Bedroom" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Bathroom" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Bathroom" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Toilet" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Toilet" />
-                  </IconButton>
-              </ListItem>
-              <ListItem key="Patio" disablePadding>
-                  <IconButton>
-                      <ListItemIcon>
-                        <BedOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText primary="Patio" />
-                  </IconButton>
-              </ListItem>
-            </List>
-          </MenuItem>
-        </Drawer>
-      
+            </ListItem>
+            <ListItem key="Living Room" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Living Room" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Bedroom" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Bedroom" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Bathroom" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Bathroom" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Toilet" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Toilet" />
+                </IconButton>
+            </ListItem>
+            <ListItem key="Patio" disablePadding>
+                <IconButton>
+                    <ListItemIcon>
+                      <BedOutlinedIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Patio" />
+                </IconButton>
+            </ListItem>
+          </List>
+      </Drawer>
     </div>
-          </Menu>
-
-);
+  );
 }
