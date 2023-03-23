@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Line, XAxis, YAxis, LineChart} from 'recharts';
-import { CircularProgress } from '@mui/material';
+import { CircularProgress, Button } from '@mui/material';
 import styles from "./Thermostat.module.scss";
 import AddCircleOutlinedIcon from '@mui/icons-material/AddCircleOutlined';
 import RemoveCircleOutlinedIcon from '@mui/icons-material/RemoveCircleOutlined';
@@ -39,13 +39,17 @@ export default function Thermostat ({ data }) {
         
         <div className={styles["container"]}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <RemoveCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px -100px 0 0'}} onClick={handleDecrement}/>
+                <Button variant='text'>
+                <RemoveCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px -200px 0 0'}} onClick={handleDecrement}/>
+                </Button>
                 <SemiCircularProgress progress={progress}/>
-                <AddCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px 0 0 -100px'}} onClick={handleIncrement}/>
+                <Button variant='text'>
+                <AddCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px 0 0 -200px'}} onClick={handleIncrement}/>
+                </Button>
             </div>
             <div  className={styles["graph-container"]}>
-                <div style={{ margin: "3rem" }}>TEMPERATURE GRAPH</div>
-                <LineChart width={520} height={300} data={data}>
+                <div style={{ margin: "1rem 3rem" }}>TEMPERATURE GRAPH</div>
+                <LineChart width={520} height={150} data={data}>
                     <XAxis dataKey="hour" />
                     <YAxis />
                     <Line type="monotone" dataKey="temperature" stroke="#8884d8" />
