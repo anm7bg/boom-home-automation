@@ -25,7 +25,7 @@ export default function Thermostat ({ data }) {
         )
     }
 
-    const [progress, setProgress] = useState(25); // initialize progress state with value of 80
+    const [progress, setProgress] = useState(25);
 
     const handleIncrement = () => {
         setProgress(prev => Math.min(prev + 1, 50));
@@ -36,15 +36,14 @@ export default function Thermostat ({ data }) {
     };
 
     return (
-        
         <div className={styles["container"]}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <Button variant='text'>
-                <RemoveCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px -200px 0 0'}} onClick={handleDecrement}/>
+                <Button variant='text' style={{ margin: '-105px -120px 0 0'}} onClick={handleDecrement}>
+                <RemoveCircleOutlinedIcon className={styles["buttons"]} />
                 </Button>
                 <SemiCircularProgress progress={progress}/>
-                <Button variant='text'>
-                <AddCircleOutlinedIcon className={styles["buttons"]} style={{ margin: '-105px 0 0 -200px'}} onClick={handleIncrement}/>
+                <Button variant='text' style={{ margin: '-105px 0 0 -120px'}} onClick={handleIncrement}>
+                <AddCircleOutlinedIcon className={styles["buttons"]} />
                 </Button>
             </div>
             <div  className={styles["graph-container"]}>
