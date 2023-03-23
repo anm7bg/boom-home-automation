@@ -4,25 +4,12 @@ import Time from "../src/components/time/Time";
 import User from "../src/components/user/User";
 import Weather from "../src/components/weather/Weather";
 import Header from "../src/components/header/Header";
+import Thermostat from "../src/components/thermostat/Thermostat";
 
 export default function Index() {
   // return <Example />;
   // return <User />;
   // return <Weather />
   // return <Time />
-  return <Navigation />
-  return (
-    <div>
-      <Header
-        left={<User />}
-        right={
-          <>
-            <Weather />
-            <Time />
-          </>
-        }
-      />
-      {/* other content */}
-    </div>
-  );
+  return <Thermostat />
 }

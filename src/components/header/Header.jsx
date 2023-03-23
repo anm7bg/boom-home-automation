@@ -5,12 +5,12 @@ import styles from "./Header.module.scss";
 
 export default function Header ({ left, right }) {
   return (
-    <div className={styles["header-wrapper"]}>
-        <Paper className={styles["header"]}>
-        <div className={styles.left}>{left}</div>
-        <div className={styles.right}>{right}</div>
-        </Paper>
-    </div>
+      <div className={styles["header-wrapper"]}>
+          <Paper className={styles["header"]}>
+              <div className={styles.left}>{left}</div>
+              <div className={styles.right}>{right}</div>
+          </Paper>
+      </div>
   );
 };
 
