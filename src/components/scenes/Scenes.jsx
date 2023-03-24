@@ -10,7 +10,7 @@ export default function Scenes ({ cards = [], selected }) {
         { iconUrl: 'images/shower.svg', selected: false },
         { iconUrl: 'images/tea-cup.svg', selected: false },
         { iconUrl: 'images/rock.svg', selected: false },
-        { iconUrl: 'images/outlined-plus.svg', selected: false },
+        { iconUrl: 'images/plus.svg', selected: false },
     ];
 
   return (
