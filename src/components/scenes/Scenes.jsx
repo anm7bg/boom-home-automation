@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import Card from '../card/Card';
 import styles from './Scenes.module.scss';
 
-const Scenes = ({ cards, selected }) => {
+export default function Scenes ({ cards = [], selected }) {
     cards = [
         { iconUrl: 'images/morning.svg', selected: false },
         { iconUrl: 'images/alarm-clock.svg', selected: false },
@@ -28,5 +28,3 @@ const Scenes = ({ cards, selected }) => {
     </div>
   );
 };
-
-export default Scenes;
