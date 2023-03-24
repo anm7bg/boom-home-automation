@@ -1,0 +1,18 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+  
+    &.outlined {
+      border: 1px solid black;
+    }
+  
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
