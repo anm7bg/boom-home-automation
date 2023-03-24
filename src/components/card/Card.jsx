@@ -4,8 +4,6 @@ import styles from './Card.module.scss';
 
 export default function Card ({ iconUrl, outlined = false, onClick }) {
 
-    iconUrl = 'images/alarm-clock.svg';
-
   return (
     <MuiCard
       className={`${styles.card} ${outlined ? styles.outlined : ''}`}
