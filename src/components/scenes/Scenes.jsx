@@ -15,9 +15,9 @@ export default function Scenes ({ cards = [], selected }) {
 
   return (
     <div className={styles['scenes-container']}>
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         {cards.map((card, index) => (
-          <Grid item xs={6} md={4} lg={3} key={index}>
+          <Grid item xs={12} md={6} lg={4} key={index}>
             <Card 
               iconUrl={card.iconUrl}
               outlined={selected && selected.id === card.id}
