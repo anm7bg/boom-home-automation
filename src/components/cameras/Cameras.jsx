@@ -24,6 +24,9 @@ export default function Cameras ({ cameras, hasButton }) {
     },
     {
       videoUrl: "https://example.com/camera6.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera6.mp4"
     }
   ];
 
