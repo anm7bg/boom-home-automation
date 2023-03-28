@@ -26,8 +26,6 @@ export default function Cameras ({ cameras, hasButton }) {
       videoUrl: "https://example.com/camera6.mp4"
     }
   ];
-  
-  hasButton = false;
 
   const handleCameraClick = (camera) => {
     setSelectedCamera(camera);
@@ -36,17 +34,17 @@ export default function Cameras ({ cameras, hasButton }) {
   return (
     <div className={styles.cameras}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={hasButton ? 8 : 12}>
+        <Grid item xs={12} md={6}>
           {selectedCamera && (
             <video src={selectedCamera.videoUrl} autoPlay controls />
           )}
         </Grid>
         {hasButton && (
           <Grid item xs={12} md={4}>
-            <Card iconUrl="https://example.com/plus-icon.png" outlined />
+            <Card iconUrl='images/plus.svg' outlined />
           </Grid>
         )}
-        <Grid item xs={12}>
+        <Grid item xs={6}>
           <div className={styles['cameras-container']}>
             {cameras.map((camera, index) => (
               <video
