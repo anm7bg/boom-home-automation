@@ -6,6 +6,29 @@ import styles from './Cameras.module.scss';
 export default function Cameras ({ cameras, hasButton }) {
   const [selectedCamera, setSelectedCamera] = useState(null);
 
+   cameras = [
+    {
+      videoUrl: "https://example.com/camera1.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera2.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera3.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera4.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera5.mp4"
+    },
+    {
+      videoUrl: "https://example.com/camera6.mp4"
+    }
+  ];
+  
+  hasButton = false;
+
   const handleCameraClick = (camera) => {
     setSelectedCamera(camera);
   };
