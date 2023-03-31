@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import Card from "../card/Card";
 import styles from "./Rooms.module.scss";
 
-export default function Rooms({  }) {
+export default function Rooms({ rooms=[] }) {
 
     return(
         <div className={styles["rooms-wrapper"]}>
