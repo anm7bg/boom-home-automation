@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card as MuiCard, CardContent } from '@mui/material';
+import { Card as MuiCard, CardContent, Typography } from '@mui/material';
 import styles from './Card.module.scss';
 
-export default function Card ({ iconUrl, outlined = false, onClick }) {
+export default function Card ({ iconUrl, outlined = false, onClick, title }) {
 
   return (
     <MuiCard
@@ -11,6 +11,9 @@ export default function Card ({ iconUrl, outlined = false, onClick }) {
     >
       <CardContent>
         {iconUrl && <img src={iconUrl} alt="card icon" />}
+        <Typography>
+          {title}
+        </Typography>
       </CardContent>
     </MuiCard>
   );
