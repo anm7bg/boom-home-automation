@@ -107,7 +107,6 @@ export default function Navigation({}) {
                     <ListItemText primary="Apartament" />
                 </IconButton>
                 <Badge badgeContent={5} color="secondary"/>
-
             </ListItem>
             <ListItem key="Living Room" disablePadding>
                 <IconButton>
