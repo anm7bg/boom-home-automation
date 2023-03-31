@@ -1,0 +1,30 @@
+@use "../../styles/colors";
+
+.container {
+    padding-top: 1rem;
+    background: rgb(225,80,166);
+    background: linear-gradient(90deg, rgba(225,80,166,1) 0%, rgba(235,103,92,1) 50%);
+}
+
+.graph-container {
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    margin-top: -168px;
+    color: white;
+}
+
+.temperature {
+    position: absolute;
+    top: 55px;
+    left: 110px;
+    color: white;
+    font-weight: 900;
+    font-size: 4.2rem;
+} 
+
+.buttons {
+    cursor: pointer;
+    color: white;
+    z-index: 5;
+    font-size: 2.2rem !important;
+}

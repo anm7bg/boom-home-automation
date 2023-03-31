@@ -5,6 +5,9 @@ import User from "../src/components/user/User";
 import Weather from "../src/components/weather/Weather";
 import Header from "../src/components/header/Header";
 import Energy from "../src/components/energy/Energy";
+import Thermostat from "../src/components/thermostat/Thermostat";
+import Card from "../src/components/card/Card";
+import Cameras from "../src/components/cameras/Cameras";
 
 export default function Index() {
   // return <Example />;
@@ -27,4 +30,8 @@ export default function Index() {
   //   </div>
   // );
   return <Energy />
+  // return <Thermostat />
+  // return <Card />
+  // return <Scenes />
+  // return <Cameras />
 }

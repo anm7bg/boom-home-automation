@@ -1,0 +1,21 @@
+@use "../../styles/colors";
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(116, 65, 243, 0.1) !important;
+
+    &.outlined {
+        border: 1px solid black;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
