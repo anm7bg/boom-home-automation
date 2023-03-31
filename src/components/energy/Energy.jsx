@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./Energy.module.scss"
 
 export default function Energy({ 
-    energy = [
+    data = [
     { energy: 25, hour: 12 },
     { energy: 13, hour: 13 },
     { energy: 14, hour: 14 },
@@ -45,7 +45,7 @@ export default function Energy({
                 </Grid>
             </Grid>
             <div>
-                <ComposedChart width={600} height={300} data={energy}>
+                <ComposedChart width={600} height={300} data={data}>
                     <Line type="monotone" dataKey="energy" stroke="#8884d8" />
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="hour" />
