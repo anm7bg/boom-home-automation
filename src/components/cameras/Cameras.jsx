@@ -3,51 +3,54 @@ import { Grid } from '@mui/material';
 import Card from '../card/Card';
 import styles from './Cameras.module.scss';
 
-export default function Cameras ({ cameras, hasButton }) {
+export default function Cameras ({ cameras, hasButton = true }) {
   const [selectedCamera, setSelectedCamera] = useState(null);
 
    cameras = [
     {
-      videoUrl: "https://example.com/camera1.mp4"
+      videoUrl: "videos/1.mp4"
     },
     {
-      videoUrl: "https://example.com/camera2.mp4"
+      videoUrl: "videos/2.mp4"
     },
     {
-      videoUrl: "https://example.com/camera3.mp4"
+      videoUrl: "videos/3.mp4"
     },
     {
-      videoUrl: "https://example.com/camera4.mp4"
+      videoUrl: "videos/4.mp4"
     },
     {
-      videoUrl: "https://example.com/camera5.mp4"
+      videoUrl: "videos/5.mp4"
     },
     {
-      videoUrl: "https://example.com/camera6.mp4"
+      videoUrl: "videos/6.mp4"
     },
     {
-      videoUrl: "https://example.com/camera6.mp4"
+      videoUrl: "videos/7.mp4"
     }
   ];
+
+  if (!selectedCamera && cameras.length > 0) {
+    setSelectedCamera(cameras[0]);
+  }
 
   const handleCameraClick = (camera) => {
     setSelectedCamera(camera);
   };
-
+   
   return (
     <div className={styles.cameras}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8}>
           {selectedCamera && (
-            <video src={selectedCamera.videoUrl} autoPlay controls />
+            <video 
+            className={styles.video} 
+            src={selectedCamera.videoUrl} 
+            autoPlay
+            controls />
           )}
         </Grid>
-        {hasButton && (
-          <Grid item xs={12} md={4}>
-            <Card iconUrl='images/plus.svg' outlined />
-          </Grid>
-        )}
-        <Grid item xs={6}>
+        <Grid item xs={12} md={4} >
           <div className={styles['cameras-container']}>
             {cameras.map((camera, index) => (
               <video
@@ -59,11 +62,14 @@ export default function Cameras ({ cameras, hasButton }) {
                   ${styles['camera-video']}
                   ${selectedCamera && selectedCamera.videoUrl === camera.videoUrl ? styles['camera-video--selected'] : ''}
                 `}
-                autoPlay={index === 0}
-                controls={index === 0}
-                paused={index !== 0}
+                paused
               />
             ))}
+            <div className={styles.add}>
+              {hasButton && (
+              <Card  iconUrl='images/plus.svg' outlined />
+              )}
+            </div>
           </div>
         </Grid>
       </Grid>

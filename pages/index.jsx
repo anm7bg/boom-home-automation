@@ -7,7 +7,9 @@ import Header from "../src/components/header/Header";
 import Energy from "../src/components/energy/Energy";
 import Thermostat from "../src/components/thermostat/Thermostat";
 import Card from "../src/components/card/Card";
+import Scenes from "../src/components/scenes/Scenes";
 import Cameras from "../src/components/cameras/Cameras";
+import Dashboard from "./Dashboard";
 
 export default function Index() {
   // return <Example />;
@@ -29,7 +31,7 @@ export default function Index() {
   //     {/* other content */}
   //   </div>
   // );
-  return <Energy />
+  return <Dashboard />
   // return <Thermostat />
   // return <Card />
   // return <Scenes />
